@@ -13,45 +13,25 @@ function Hero() {
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
-            Welcome to my Web <br /> Development Portofolio!
+            Hi there, I'm Anthony
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
-          </Typography>
-          <div className="grid">
-            <Typography
-              variant="small"
-              className="mb-2 text-gray-900 font-medium"
-            >
-              Your email
-            </Typography>
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              {/* @ts-ignore */}
-              <Input color="gray" label="Enter your email" size="lg" />
-              <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                require offer
-              </Button>
-            </div>
-          </div>
-          <Typography variant="small" className="font-normal !text-gray-500">
-            Read my{" "}
-            <a href="#" className="font-medium underline transition-colors">
-              Terms and Conditions
-            </a>
+            I&apos;m a growing IT professional with a passion for technology and helping people. Prior to my move to IT,
+            I was a flight attendant for eight years. In that role I developed strong skills in communication, customer service, and teamwork. While I loved my time flying,
+            I'm enjoying working in a different type of cloud and genuinely enjoy solving problems and constantly learning new things. In my spare time you can find me running, reading, or traveling.
+            
           </Typography>
         </div>
-        <Image
+        <div className='p-32'><Image
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/image-7.svg"
-          className="h-[36rem] w-full rounded-xl object-cover"
-        />
+          src="/image/melondon.jpg"
+          className="rounded-xl"
+        /></div>
       </div>
     </header>
   );

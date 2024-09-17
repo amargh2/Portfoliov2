@@ -14,39 +14,39 @@ import { SkillCard } from "@/components";
 const SKILLS = [
   {
     icon: RectangleGroupIcon,
-    title: "Frontend Web Development:",
+    title: "Application Development",
     children:
-      "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
+      "I taught myself the MERN stack - MongoDB, Express, React, and Node.js - and am familiar with a range of front end design systems and frameworks. I have built several applications and am planning on building more. Some of them are listed below.",
   },
   {
     icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    title: "Technical Support",
     children:
-      " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
+      "As a customer service professional, I am especially good at listening closely and empathetically to understand the problem. As a curious technician, I don't shy away from difficult problems or unfamiliar technologies and enjoy the challenge and satisfaction of researching and resolving issues.",
   },
   {
     icon: SwatchIcon,
-    title: "Technology Stack",
+    title: "Communication",
     children:
-      "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
+      "I honed strong skills in communication working with the public and my colleagues as a flight attendant for American Airlines as well as the year I spent teaching in South Korea. My degree in English has also equipped me with strong writing skills, and I am excited about good documenation.",
   },
   {
     icon: HashtagIcon,
-    title: " Web Optimization",
+    title: "System and Network Administration",
     children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
+      "I currently help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I earned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
   },
   {
     icon: EyeIcon,
-    title: "User-Centric Design",
+    title: "Scripting",
     children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
+      "I am proficient in Bash and PowerShell and enjoy creating scripts and utilities to aid in endpoint administration and task automation. I believe automation helps reduce errors and frees us up to solve harder problems.",
   },
   {
     icon: DocumentTextIcon,
-    title: "Testing and Quality Assurance",
+    title: "Adaptability and Teamwork",
     children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
+      "Working as a flight attendant and teacher overseas taught me a lot about adapting to changing circumstances, working with others effectively, and staying calm under pressure. I value professional communication, collaboration, and a positive workplace, and do my best to create one.",
   },
 ];
 
@@ -54,19 +54,15 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          my skills
-        </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          What I do
+          Some of my skills
         </Typography>
         <Typography
           variant="lead"
           className="mx-auto w-full !text-gray-500 lg:w-10/12"
         >
-          I&apos;m not just a developer; I&apos;m a digital dreamweaver.
-          Crafting immersive online experiences is not just a job but my
-          calling. Discover below how I can help you.
+          I'm a highly curious technical professional with a commitment to continuously improving my skills and working collaboratively and productively with any team I'm on.
+          Below is a sampling of my skillset.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">

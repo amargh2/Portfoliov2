@@ -5,7 +5,27 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
+    img: "/image/weatherapp.png",
+    title: "Weather App",
+    desc: "Just a simple weather app. It's built in React and incorporates two API's - one to get coordinates with MapBox, and the other to get the weather.",
+  },
+  {
+    img: "/image/BattleShip.jpg",
+    title: "Battleship",
+    desc: "Battleship built in object oriented vanilla JavaScript. Uses drag and drop DOM API for ship placement and includes a computer opponent.",
+  },
+  {
+    img: "/image/crystal-shop.png",
+    title: "Crystal Shop",
+    desc: "A simple front end for selling all your favorite rocks and crystals. Built in React using state management, components and styled simply with Tailwind.",
+  },
+  {
+    img: "/image/discourse.png",
+    title: "The Discourse",
+    desc: "A message board with user accounts and authentication, ",
+  },
+  {
+    img: "/image/fantasy-shop-updated.png",
     title: "Mobile App Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
   },
@@ -18,31 +38,6 @@ const PROJECTS = [
     img: "/image/blog3.svg",
     title: "Mobile App Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
-  },
-  {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
   },
 ];
 
