@@ -17,27 +17,22 @@ const PROJECTS = [
   {
     img: "/image/crystal-shop.png",
     title: "Crystal Shop",
-    desc: "A simple front end for selling all your favorite rocks and crystals. Built in React using state management, components and styled simply with Tailwind.",
+    desc: "A simple front end for selling all your favorite rocks and crystals. Built in React using state management, components and styled with Tailwind.",
   },
   {
     img: "/image/discourse.png",
     title: "The Discourse",
-    desc: "A message board with user accounts and authentication, ",
+    desc: "A message board with user accounts and authentication, message board, and messaging system. Built with Express and styled with SASS.",
   },
   {
     img: "/image/fantasy-shop-updated.png",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    title: "Fantasy Shop",
+    desc: "My first full-stack application. Uses the Model-View-Controller design pattern. Back end built with MongoDB and Express and front end built with Bootstrap.",
   },
   {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    img: "/image/twitter.png",
+    title: "Twitter Front End By Eye",
+    desc: "My attempt at building Twitter's front end by eye using SASS and Next.js. Includes Google authentication with Next Auth and basic posting system.",
   },
 ];
 
@@ -52,12 +47,10 @@ export function Projects() {
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
+          I learned a lot building these and have a lot more to learn. Most of them were assignments from The Odin Project, an open source self-paced development course that encourages learning by doing.
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
+      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
