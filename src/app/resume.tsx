@@ -2,24 +2,25 @@
 
 import { Typography, Button } from "@material-tailwind/react";
 import {
-  ChartBarIcon,
+  AcademicCapIcon,
   PuzzlePieceIcon,
   CursorArrowRaysIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
+import { TbCertificate } from "react-icons/tb";
 import { ResumeItem } from "@/components";
 
 const RESUME_ITEMS = [
   {
-    icon: ChartBarIcon,
+    icon: AcademicCapIcon,
     children: "Bachelor of Arts in English Literature",
   },
   {
-    icon: PuzzlePieceIcon,
+    icon: TbCertificate,
     children: "CCNA",
   },
   {
-    icon: CursorArrowRaysIcon,
+    icon: TbCertificate,
     children: "CompTIA A+, Network+, and Security+",
   },
 ];

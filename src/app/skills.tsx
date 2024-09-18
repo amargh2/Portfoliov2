@@ -3,7 +3,6 @@
 import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
-  FingerPrintIcon,
   UserGroupIcon,
   ComputerDesktopIcon,
   ChatBubbleBottomCenterIcon,
@@ -29,7 +28,7 @@ const SKILLS = [
     icon: ChatBubbleBottomCenterIcon,
     title: "Communication",
     children:
-      "Flight attending for an international airline and traveling throughout my 20's taught me how to communicate effectively with people from different walks of life all over the world. As a former English major, I love to write and am excited by great documentation.",
+      "Flight attending for an international airline and traveling throughout my 20's taught me how to communicate effectively with people from different walks of life all over the world. As a former English major, I love to write and know the value of good documentation.",
   },
   {
     icon: ServerStackIcon,
