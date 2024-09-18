@@ -4,10 +4,11 @@ import { Typography } from "@material-tailwind/react";
 import {
   RectangleGroupIcon,
   FingerPrintIcon,
-  SwatchIcon,
-  HashtagIcon,
-  EyeIcon,
-  DocumentTextIcon,
+  UserGroupIcon,
+  ComputerDesktopIcon,
+  ChatBubbleBottomCenterIcon,
+  ServerStackIcon,
+  CommandLineIcon
 } from "@heroicons/react/24/solid";
 import { SkillCard } from "@/components";
 
@@ -19,31 +20,31 @@ const SKILLS = [
       "I taught myself the MERN stack - MongoDB, Express, React, and Node.js - and am familiar with a range of front end design systems and frameworks. I have built several applications and am planning on building more. Some of them are listed below.",
   },
   {
-    icon: FingerPrintIcon,
+    icon: ComputerDesktopIcon,
     title: "Technical Support",
     children:
       "As a customer service professional, I am especially good at listening closely and empathetically to understand the problem. As a curious technician, I don't shy away from difficult problems or unfamiliar technologies and enjoy the challenge and satisfaction of researching and resolving issues.",
   },
   {
-    icon: SwatchIcon,
+    icon: ChatBubbleBottomCenterIcon,
     title: "Communication",
     children:
-      "I honed strong skills in communication working with the public and my colleagues as a flight attendant for American Airlines as well as the year I spent teaching in South Korea. I was also an English major and am excited about good documentation.",
+      "Flight attending for an international airline and traveling throughout my 20's taught me how to communicate effectively with people from different walks of life all over the world. As a former English major, I love to write and am excited by great documentation.",
   },
   {
-    icon: HashtagIcon,
+    icon: ServerStackIcon,
     title: "System and Network Administration",
     children:
-      "I currently help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I alsoearned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
+      "I currently help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I also earned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
   },
   {
-    icon: EyeIcon,
+    icon: CommandLineIcon,
     title: "PowerShell and Bash Scripting",
     children:
       "I am proficient in Bash and PowerShell and enjoy creating scripts and utilities to aid in endpoint administration and common support tasks. I have used multiple tools, modules, and scripts to accomplish administrative and reporting tasks and am excited by automation.",
   },
   {
-    icon: DocumentTextIcon,
+    icon: UserGroupIcon,
     title: "Adaptability and Teamwork",
     children:
       "Working as a flight attendant and teacher overseas taught me a lot about adapting to changing circumstances, working with others effectively, and staying calm under pressure. I value professional communication, collaboration, and a positive workplace, and do my best to create one wherever I go.",
