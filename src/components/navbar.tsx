@@ -12,11 +12,12 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const NAV_MENU = [
   {
-    name: "LinkedIn",
+    name: "GitHub",
     icon: FaGithub,
+    href: 'https://www.github.com/amargh2'
   },
   {
-    name: "GitHub",
+    name: "LinkedIn",
     icon: FaLinkedin,
   }
 ];

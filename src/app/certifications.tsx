@@ -14,7 +14,7 @@ export function Clients() {
   return (
     <section className="px-8 py-28">
       <div className="container mx-auto text-center">
-      <Typography variant="h1" color="blue-gray" className="mb-4">
+      <Typography variant="h2" color="blue-gray" className="mb-4">
           My Certifications
         </Typography>
         <div className="flex flex-wrap items-center justify-center gap-20">

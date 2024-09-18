@@ -20,8 +20,8 @@ function Hero() {
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
             I&apos;m a growing IT professional with a passion for technology and helping people. Prior to my move to IT,
-            I was a flight attendant for eight years. In that role I developed strong skills in communication, customer service, and teamwork. While I loved my time flying,
-            I'm enjoying working in a different type of cloud and genuinely enjoy solving problems and constantly learning new things. In my spare time you can find me running, reading, or traveling.
+            I was a flight attendant for eight years. While I loved my time flying,
+            I'm enjoying working in a different type of cloud. In my spare time you can find me running, reading, or traveling.
             
           </Typography>
         </div>
