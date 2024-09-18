@@ -37,7 +37,7 @@ const PROJECTS = [
     img: "/image/fantasy-shop-updated.png",
     title: "Fantasy Shop",
     desc: "My first full-stack application. Uses the Model-View-Controller design pattern. Back end built with MongoDB and Express and front end built with Bootstrap. Front end needs some love, but this was mostly about learning MongoDB and MVC.",
-    github: 'www.github.com/amargh2/',
+    github: 'https://www.github.com/amargh2/',
     live: 'https://jellyfish-app-hkfa5.ondigitalocean.app/catalog'
   },
   {
