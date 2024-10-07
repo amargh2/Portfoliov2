@@ -19,6 +19,7 @@ const NAV_MENU = [
   {
     name: "LinkedIn",
     icon: FaLinkedin,
+    href: 'https://www.linkedin.com/in/anthony-margherio-26b26850/'
   }
 ];
 

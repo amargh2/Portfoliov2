@@ -13,7 +13,7 @@ export function Footer() {
               <li key={link}>
                 <Typography
                   as="a"
-                  href="#"
+                  href="www.github.com/amargh2"
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
                 >
