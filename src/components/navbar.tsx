@@ -3,10 +3,6 @@ import {
   Navbar as MTNavbar,
   Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-} from "@heroicons/react/24/solid";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
