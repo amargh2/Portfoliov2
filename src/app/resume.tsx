@@ -3,8 +3,6 @@
 import { Typography, Button } from "@material-tailwind/react";
 import {
   AcademicCapIcon,
-  PuzzlePieceIcon,
-  CursorArrowRaysIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
 import { TbCertificate } from "react-icons/tb";
@@ -17,7 +15,7 @@ const RESUME_ITEMS = [
   },
   {
     icon: TbCertificate,
-    children: "CCNA",
+    children: "Cisco Certified Network Associate (CCNA)",
   },
   {
     icon: TbCertificate,
@@ -34,19 +32,21 @@ export function Resume() {
             My background
           </Typography>
           <Typography className="mb-4 mt-3 w-9/12 font-normal !text-gray-500">
-            A former flight attendant and current IT professional with self-taught technical skills, active certifications, and a degree in English.
+            A former flight attendant and current IT professional with self-taught technical skills, active technical certifications, and a degree in English.
           </Typography>
-          <Button
-            variant="text"
-            color="gray"
-            className="flex items-center gap-2"
-          >
-            Linkedin
-            <ArrowRightIcon
-              strokeWidth={3}
-              className="h-3.5 w-3.5 text-gray-900"
-            />
-          </Button>
+            <a href='https://www.linkedin.com/in/anthony-margherio-26b26850/'>
+              <Button
+                variant="text"
+                color="gray"
+                className="flex items-center gap-2"
+              >
+                Linkedin
+                <ArrowRightIcon
+                  strokeWidth={3}
+                  className="h-3.5 w-3.5 text-gray-900"
+                />
+              </Button>
+            </a>  
         </div>
         <div className="col-span-1 grid gap-y-6 lg:ml-auto pr-0 lg:pr-12 xl:pr-32">
           {RESUME_ITEMS.map((props, idx) => (
