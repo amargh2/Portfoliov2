@@ -60,7 +60,7 @@ export function Projects() {
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          I learned a lot building these and have a lot more to learn. Most of them were assignments from <Link className="text-blue-800" href='https://www.theodinproject.com/paths'>The Odin Project</Link>, an open source self-paced development course that encourages learning by doing.
+          I learned a lot building these and have a lot more to learn. Most of them were assignments from <Link className="text-blue-300" href='https://www.theodinproject.com/paths'>The Odin Project</Link>, an open source self-paced development course that encourages learning by doing.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
