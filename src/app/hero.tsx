@@ -25,7 +25,7 @@ function Hero() {
             
           </Typography>
         </div>
-        <div className='p-32'><Image
+        <div className='sm:p-20 md:p-32 lg:p-16'><Image
           width={1024}
           height={1024}
           alt="team work"
