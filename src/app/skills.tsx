@@ -16,7 +16,7 @@ const SKILLS = [
     icon: RectangleGroupIcon,
     title: "Application Development",
     children:
-      "I taught myself the MERN stack - MongoDB, Express, React, and Node.js - and am familiar with a range of front end design systems and frameworks. I have built several applications and am planning on building more. Some of them are listed below.",
+      "I taught myself the MERN stack - MongoDB, Express, React, and Node.js - and am familiar with a range of front end design systems and frameworks. Some of the projects I made to learn software and coding concepts are below.",
   },
   {
     icon: ComputerDesktopIcon,
@@ -28,19 +28,19 @@ const SKILLS = [
     icon: ChatBubbleBottomCenterIcon,
     title: "Communication",
     children:
-      "Flight attending for an international airline and traveling throughout my 20's taught me how to communicate effectively with people from different walks of life all over the world. As a former English major, I love to write and know the value of good documentation.",
+      "Flight attending for an international airline, teaching in Korea, and years of customer service experience have helped me hone my ability to communicate effectively with diverse audiences. As a former English major, I love to write and know the value of good documentation.",
   },
   {
     icon: ServerStackIcon,
     title: "System and Network Administration",
     children:
-      "I currently help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I also earned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
+      "I help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I also earned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
   },
   {
     icon: CommandLineIcon,
     title: "PowerShell and Bash Scripting",
     children:
-      "I am proficient in Bash and PowerShell and enjoy creating scripts and utilities to aid in endpoint administration and common support tasks. I have used multiple tools, modules, and scripts to accomplish administrative and reporting tasks and am excited by automation.",
+      "I am skilled in Bash and PowerShell and enjoy creating scripts and utilities to aid in endpoint administration and common support tasks. I have used multiple tools, modules, and scripts to accomplish administrative and reporting tasks and am excited by automation.",
   },
   {
     icon: UserGroupIcon,

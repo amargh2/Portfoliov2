@@ -2,6 +2,7 @@
 
 import { ProjectCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
+import Link from "next/link";
 
 const PROJECTS = [
   {
@@ -21,14 +22,14 @@ const PROJECTS = [
   {
     img: "/image/crystal-shop.png",
     title: "Crystal Shop",
-    desc: "A simple front end for selling all your favorite rocks and crystals. Built in React using state management, components and styled with Tailwind.",
+    desc: "A simple, mobile-first front end for selling all your favorite rocks and crystals. Built in React using state management, components and styled with Tailwind.",
     github: 'https://www.github.com/amargh2/shopping-app',
     live: 'https://amargh-shopping-app.netlify.app/'
   },
   {
     img: "/image/discourse.png",
     title: "The Discourse",
-    desc: "A message board with user accounts and authentication, message board, and messaging system. Built with Express and styled with SASS.",
+    desc: "A message board with user accounts and authentication, public message board, and private messaging system. Built with Express and styled with SASS.",
     github: 'https://www.github.com/amargh2/members-only-message-board',
     live: 'https://the-discourse-m8mcv.ondigitalocean.app/login'
   },
@@ -59,7 +60,7 @@ export function Projects() {
           variant="lead"
           className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
         >
-          I learned a lot building these and have a lot more to learn. Most of them were assignments from The Odin Project, an open source self-paced development course that encourages learning by doing.
+          I learned a lot building these and have a lot more to learn. Most of them were assignments from <Link className="text-blue-800" href='https://www.theodinproject.com/paths'>The Odin Project</Link>, an open source self-paced development course that encourages learning by doing.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-3">
