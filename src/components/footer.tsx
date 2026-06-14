@@ -1,6 +1,17 @@
 import { Typography, Button } from "@material-tailwind/react";
 
-const LINKS = ["GitHub"];
+const LINKS = [
+    {
+    id: '1',
+    name: 'GitHub',
+    url: 'https://www.github.com/amargh2'
+  },
+  {
+    id: '2',
+    name: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/anthony-margherio-26b26850/'
+  },
+];
 
 export function Footer() {
   return (
@@ -9,16 +20,17 @@ export function Footer() {
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
           <ul className="flex gap-8 items-center">
             {LINKS.map((link) => (
-              <li key={link}>
+              <li key={link.id}>
                 <Typography
                   as="a"
-                  href="https://www.github.com/amargh2"
+                  href= {link.url}
                   variant="small"
                   className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
                 >
-                  {link}
+                  {link.name}
                 </Typography>
               </li>
+
             ))}
           </ul>
         </div>
