@@ -1,74 +1,93 @@
-"use client";
-
-import { Typography } from "@material-tailwind/react";
-import {link}
-import {
-  RectangleGroupIcon,
-  UserGroupIcon,
-  ComputerDesktopIcon,
-  ChatBubbleBottomCenterIcon,
-  ServerStackIcon,
-  CommandLineIcon
-} from "@heroicons/react/24/solid";
-import { SkillCard } from "@/components";
-
-const SKILLS = [
+const STACK_GROUPS = [
   {
-    icon: RectangleGroupIcon,
-    title: "Application Development",
-    children:
-      "I taught myself the MERN stack - MongoDB, Express, React, and Node.js - and am familiar with a range of front end design systems and frameworks. Some of the projects I made to learn software and coding concepts are below.",
+    title: "Endpoint & Cloud",
+    skills: [
+      "Microsoft Intune",
+      "Proactive Remediations",
+      "Azure Virtual Desktop (AVD)",
+      "Nerdio Manager",
+      "Entra ID",
+      "Windows Autopilot",
+      "OSDCloud",
+      "SharePoint Online",
+    ],
   },
   {
-    icon: ComputerDesktopIcon,
-    title: "Technical Support",
-    children:
-      "As a customer service professional, I am especially good at listening closely and empathetically to understand the problem. As a curious technician, I don't shy away from difficult problems or unfamiliar technologies and enjoy the challenge and satisfaction of researching and resolving issues.",
+    title: "Automation & AI Tooling",
+    skills: [
+      "PowerShell",
+      "PSADT",
+      "Microsoft Graph API",
+      "MCP (Admin & Azure)",
+      "Python",
+      "TypeScript",
+      "Ansible",
+      "Bash",
+      "Git",
+    ],
   },
   {
-    icon: ChatBubbleBottomCenterIcon,
-    title: "Communication",
-    children:
-      "Flight attending for an international airline, teaching in Korea, and years of customer service experience have helped me hone my ability to communicate effectively with diverse audiences. As a former English major, I love to write and know the value of good documentation.",
+    title: "Systems & Virtualization",
+    skills: [
+      "Linux Server Admin",
+      "Hybrid Windows",
+      "Proxmox",
+      "KVM / QEMU",
+      "Docker",
+      "Cisco Modeling Labs",
+    ],
   },
   {
-    icon: ServerStackIcon,
-    title: "System and Network Administration",
-    children:
-      "I help administer cloud and on-premises applications and systems, maintaining and troubleshooting platforms like Intune, Azure, Entra ID, M365, VMware, and Active Directory. I also earned my CCNA through self-study and work with several Cisco technologies at work and in my home lab.",
-  },
-  {
-    icon: CommandLineIcon,
-    title: "PowerShell and Bash Scripting",
-    children:
-      "I am skilled in Bash and PowerShell and enjoy creating scripts and utilities to aid in endpoint administration and common support tasks. I have used multiple tools, modules, and scripts to accomplish administrative and reporting tasks and am excited by automation.",
-  },
-  {
-    icon: UserGroupIcon,
-    title: "Adaptability and Teamwork",
-    children:
-      "Working as a flight attendant and teacher overseas taught me a lot about adapting to changing circumstances, working with others effectively, and staying calm under pressure. I value professional communication, collaboration, and a positive workplace, and do my best to create one wherever I go.",
+    title: "Networking & Security",
+    skills: [
+      "CrowdStrike Falcon",
+      "Tenable",
+      "LAPS",
+      "RBAC",
+      "Firewalls",
+      "VPN & Split Tunneling",
+      "Cisco IOS",
+      "VLANs",
+    ],
   },
 ];
 
 export function Skills() {
   return (
-    <section className="px-8">
-      <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h1" color="blue-gray" className="mb-4">
-          Some of my skills
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
-        >
-          I'm a curious technical professional committed to continuously improving my skills and collaborating productively with any team I'm on.
-        </Typography>
-      </div>
-      <div className="container mx-auto grid grid-cols-1 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-        {SKILLS.map((props, idx) => (
-          <SkillCard key={idx} {...props} />
-        ))}
+    <section
+      id="stack"
+      className="border-b border-slate-800/80 py-16 lg:py-20"
+    >
+      <div className="mx-auto max-w-4xl px-6">
+        <p className="font-mono text-xs uppercase tracking-wider text-cyan-400/90">
+          Stack
+        </p>
+        <h2 className="mt-2 text-2xl font-bold tracking-tight text-slate-50">
+          What I Work With
+        </h2>
+
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
+          {STACK_GROUPS.map((group) => (
+            <div
+              key={group.title}
+              className="rounded-xl border border-slate-800/80 bg-slate-900/40 p-5"
+            >
+              <h3 className="text-sm font-semibold text-slate-100">
+                {group.title}
+              </h3>
+              <div className="mt-3.5 flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-md border border-slate-800 bg-slate-950/80 px-2.5 py-1 font-mono text-xs text-slate-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

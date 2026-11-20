@@ -1,64 +1,60 @@
-import React from "react";
-import {
-  Navbar as MTNavbar,
-  Typography,
-} from "@material-tailwind/react";
+import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-
-const NAV_MENU = [
-  {
-    name: "GitHub",
-    icon: FaGithub,
-    href: 'https://www.github.com/amargh2'
-  },
-  {
-    name: "LinkedIn",
-    icon: FaLinkedin,
-    href: 'https://www.linkedin.com/in/anthony-margherio-26b26850/'
-  }
+const SECTION_LINKS = [
+  { name: "Stack", href: "#stack" },
+  { name: "Projects", href: "#projects" },
+  { name: "Experience", href: "#experience" },
+  { name: "Credentials", href: "#credentials" },
 ];
-
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-}
-
-function NavItem({ children, href }: NavItemProps) {
-  return (
-    <li>
-      <Typography
-        as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="paragraph"
-        color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
-      >
-        {children}
-      </Typography>
-    </li>
-  );
-}
 
 export function Navbar() {
   return (
-    <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50">
-      <div className="container mx-auto flex items-center">
-        <Typography color="blue-gray" className="text-lg font-bold">
+    <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md">
+      <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+        <Link
+          href="#top"
+          className="text-sm font-semibold tracking-tight text-slate-100 transition-colors hover:text-cyan-300"
+        >
           Anthony Margherio
-        </Typography>
-        <ul className="ml-10 items-center gap-8 flex">
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
-              <Icon className="h-5 w-5" />
-              {name}
-            </NavItem>
+        </Link>
+
+        <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
+          {SECTION_LINKS.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className="text-sm text-slate-400 transition-colors hover:text-slate-100"
+            >
+              {item.name}
+            </a>
           ))}
-        </ul>
+        </nav>
+
+        <div className="flex items-center gap-4">
+          <a
+            href="https://github.com/amargh2"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-slate-100"
+          >
+            <FaGithub className="h-4 w-4" />
+            <span className="hidden sm:inline">GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anthony-margherio-26b26850/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-slate-100"
+          >
+            <FaLinkedin className="h-4 w-4" />
+            <span className="hidden sm:inline">LinkedIn</span>
+          </a>
+        </div>
       </div>
-      
-    </MTNavbar>
+    </header>
   );
 }
 

@@ -1,19 +1,16 @@
-/* eslint-disable @next/next/next-script-for-ga */
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Layout } from "@/components";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700", "900"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
-  title: "Anthony Margherio's Webpage",
+  title: "Anthony Margherio — Systems & Endpoint Infrastructure Engineer",
   description:
-    "Website built with Material Tailwind template.",
+    "Systems and Endpoint Infrastructure Engineer in Chicago specializing in Microsoft Intune, Entra ID, Azure Virtual Desktop (AVD), PowerShell/PSADT automation, and Model Context Protocol (MCP) tooling.",
+  openGraph: {
+    title: "Anthony Margherio — Systems & Endpoint Infrastructure Engineer",
+    description:
+      "Microsoft Intune, Entra ID, Azure Virtual Desktop (AVD), hybrid Linux/Windows infrastructure, and AI-assisted automation.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -24,18 +21,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-site="www.anthonymargherio.com"
-          src="https://api.nepcha.com/js/nepcha-analytics.js"
-        ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        />
       </head>
-      <body className={roboto.className}>
-        <Layout>
-          {children}
-        </Layout>
-      </body>
+      <body className="font-sans min-h-screen">{children}</body>
     </html>
   );
 }

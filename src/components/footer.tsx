@@ -1,38 +1,38 @@
-import { Typography, Button } from "@material-tailwind/react";
-
-const LINKS = [
-    {
-    id: '1',
-    name: 'GitHub',
-    url: 'https://www.github.com/amargh2'
-  },
-  {
-    id: '2',
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/anthony-margherio-26b26850/'
-  },
-];
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function Footer() {
-  return (
-    <footer className="mt-10 px-8 pt-20">
-      <div className="container mx-auto">
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 border-t border-gray-200 py-6 md:justify-between">
-          <ul className="flex gap-8 items-center">
-            {LINKS.map((link) => (
-              <li key={link.id}>
-                <Typography
-                  as="a"
-                  href= {link.url}
-                  variant="small"
-                  className="font-normal text-gray-700 hover:text-gray-900 transition-colors"
-                >
-                  {link.name}
-                </Typography>
-              </li>
+  const year = new Date().getFullYear();
 
-            ))}
-          </ul>
+  return (
+    <footer className="border-t border-slate-800/80 bg-slate-950">
+      <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-slate-500 sm:flex-row">
+        <div className="flex items-center gap-2 font-mono text-xs">
+          <span className="text-slate-400">Anthony Margherio</span>
+          <span aria-hidden="true">·</span>
+          <span>Chicago, IL</span>
+          <span aria-hidden="true">·</span>
+          <span>{year}</span>
+        </div>
+
+        <div className="flex items-center gap-6">
+          <a
+            href="https://github.com/amargh2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-slate-400 transition-colors hover:text-cyan-300"
+          >
+            <FaGithub className="h-4 w-4" />
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/anthony-margherio-26b26850/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-slate-400 transition-colors hover:text-cyan-300"
+          >
+            <FaLinkedin className="h-4 w-4" />
+            <span>LinkedIn</span>
+          </a>
         </div>
       </div>
     </footer>

@@ -1,13 +1,31 @@
 import type { Config } from "tailwindcss";
-const withMT = require("@material-tailwind/react/utils/withMT");
 
-const config: Config = withMT({
+const config: Config = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "sans-serif",
+        ],
+        mono: [
+          "JetBrains Mono",
+          "ui-monospace",
+          "SFMono-Regular",
+          "Menlo",
+          "monospace",
+        ],
+      },
+    },
+  },
   plugins: [],
-});
+};
 
 export default config;

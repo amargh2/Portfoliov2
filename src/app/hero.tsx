@@ -1,39 +1,77 @@
-"use client";
-
 import Image from "next/image";
-import { Input, Button, Typography } from "@material-tailwind/react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-function Hero() {
+export function Hero() {
   return (
-    <header className="bg-white p-8">
-      <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
-        <div className="row-start-2 lg:row-auto">
-          <Typography
-            variant="h1"
-            color="blue-gray"
-            className="mb-4 lg:text-5xl !leading-tight text-3xl"
-          >
-            Hi there, I'm Anthony
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
-          >
-            I&apos;m a growing IT professional with a passion for technology and helping people. Prior to my move to IT,
-            I was a flight attendant for eight years. While I loved my time flying,
-            I'm enjoying working in a different type of cloud. In my spare time you can find me running, reading, or traveling.
-            
-          </Typography>
+    <section
+      id="top"
+      className="relative overflow-hidden border-b border-slate-800/80"
+    >
+      <div
+        aria-hidden="true"
+        className="bg-grid-pattern pointer-events-none absolute inset-0 opacity-40 [mask-image:radial-gradient(ellipse_at_top,black_25%,transparent_75%)]"
+      />
+
+      <div className="relative mx-auto max-w-4xl px-6 py-16 lg:py-24">
+        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-12">
+          <div className="md:col-span-8">
+            <p className="font-mono text-xs text-slate-400">
+              Chicago, IL
+            </p>
+
+            <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
+              Anthony Margherio
+            </h1>
+
+            <p className="mt-2 text-base font-medium text-cyan-300/90 sm:text-lg">
+              Systems &amp; Endpoint Infrastructure Engineer
+            </p>
+
+            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-base">
+              I work with Microsoft Intune, Entra ID, Azure Virtual Desktop, and
+              hybrid Linux/Windows environments. Most of my time goes into
+              automating device provisioning, packaging apps, cleaning up legacy
+              configs, and writing PowerShell, Python, and MCP tooling to cut
+              down on manual admin work.
+            </p>
+
+            <div className="mt-7 flex flex-wrap items-center gap-3">
+              <a
+                href="https://github.com/amargh2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-4 py-2 text-sm font-medium text-slate-950 transition-colors hover:bg-white"
+              >
+                <FaGithub className="h-4 w-4" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anthony-margherio-26b26850/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/70 px-4 py-2 text-sm font-medium text-slate-200 transition-colors hover:border-slate-600 hover:bg-slate-800"
+              >
+                <FaLinkedin className="h-4 w-4 text-cyan-400" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <div className="flex justify-start md:col-span-4 md:justify-end">
+            <div className="w-44 overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 sm:w-52 md:w-56">
+              <Image
+                src="/image/headshot.jpg"
+                alt="Anthony Margherio"
+                width={540}
+                height={540}
+                priority
+                className="aspect-square w-full object-cover"
+              />
+            </div>
+          </div>
         </div>
-        <div className='xs:p-32 md:p-32 lg:p-16'><Image
-          width={1024}
-          height={1024}
-          alt="team work"
-          src="/image/melondon.jpg"
-          className="rounded-xl"
-        /></div>
       </div>
-    </header>
+    </section>
   );
 }
 
