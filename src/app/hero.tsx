@@ -22,7 +22,7 @@ export function Hero() {
             </h1>
 
             <p className="mt-2 text-base font-medium text-sky-700 sm:text-lg">
-              Systems and Infrastructure | Scripting and Development | Microsoft Intune | Entra ID | Azure Virtual Desktop | Linux and Windows Administration
+              Systems and Infrastructure | Scripting and Development | Microsoft Intune | Entra ID | Azure | Virtual Desktop Infrastructure | Linux and Windows Administration
             </p>
 
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-600 sm:text-base">
