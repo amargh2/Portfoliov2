@@ -1,6 +1,20 @@
-Just a portfolio adapated from Material Tailwind 
-- Made with Material Tailwind and NextJS.
-- Recently updated to fix mobile responsiveness issues
-- I didn't use AI for this or my other projects. Not that it matters, because AI is transformative and resistance appears to be futile, but I learned a lot making them myself - debugging, reading documentation, letting concepts coalesce, and banging my head against the wall sometimes. AI would have made them look much nicer, more optimized, etc., but I think there's some value both in taking and documenting the actual journey.
-- I mostly work with PowerShell and scripting languages now, but I still like JS. It cannot be helped.
-- Anyway here's my LinkedIn: https://www.linkedin.com/in/anthony-margherio-26b26850/
+# anthonymargherio.com
+
+Personal site for **Anthony Margherio** — Systems & Endpoint Infrastructure Engineer based in Chicago, IL.
+
+Built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), and TypeScript.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it locally.
+
+## Links
+
+- Site: [anthonymargherio.com](https://www.anthonymargherio.com)
+- GitHub: [github.com/amargh2](https://github.com/amargh2)
+- LinkedIn: [linkedin.com/in/anthony-margherio-26b26850](https://www.linkedin.com/in/anthony-margherio-26b26850/)

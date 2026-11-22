@@ -7,7 +7,7 @@ import Certifications from "./certifications";
 
 export default function Portfolio() {
   return (
-    <div className="flex min-h-screen flex-col bg-slate-950 text-slate-200">
+    <div className="flex min-h-screen flex-col bg-white text-slate-800">
       <Navbar />
       <main className="flex-1">
         <Hero />

@@ -10,11 +10,11 @@ const SECTION_LINKS = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/85 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
         <Link
           href="#top"
-          className="text-sm font-semibold tracking-tight text-slate-100 transition-colors hover:text-cyan-300"
+          className="text-sm font-semibold tracking-tight text-slate-900 transition-colors hover:text-sky-700"
         >
           Anthony Margherio
         </Link>
@@ -24,7 +24,7 @@ export function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm text-slate-400 transition-colors hover:text-slate-100"
+              className="text-sm text-slate-600 transition-colors hover:text-slate-900"
             >
               {item.name}
             </a>
@@ -37,7 +37,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-slate-100"
+            className="flex items-center gap-1.5 text-sm text-slate-600 transition-colors hover:text-slate-900"
           >
             <FaGithub className="h-4 w-4" />
             <span className="hidden sm:inline">GitHub</span>
@@ -47,7 +47,7 @@ export function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-slate-100"
+            className="flex items-center gap-1.5 text-sm text-slate-600 transition-colors hover:text-slate-900"
           >
             <FaLinkedin className="h-4 w-4" />
             <span className="hidden sm:inline">LinkedIn</span>
